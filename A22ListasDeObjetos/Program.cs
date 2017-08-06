@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -50,6 +50,8 @@ namespace A22ListasDeObjetos
 
             ImprimeAulas(aulas);
 
+///<image url='$(ProjectDir)\Slides\image1.png'/>
+
         }
 
         private static void ImprimeAulas(List<Aula> aulas)
@@ -62,3 +64,4 @@ namespace A22ListasDeObjetos
         }
     }
 }
+

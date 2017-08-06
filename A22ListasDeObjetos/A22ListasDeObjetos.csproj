@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Slides\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"C:\Users\marce\Documents\Visual Studio 2017\Projects\CodeWhisper\CodeWhisper\bin\Debug\CodeWhisper.exe"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
