@@ -74,6 +74,7 @@ namespace A11Arrays
 
         private static void Imprimir(string[] aulas)
         {
+            Console.Clear();
             //foreach (var aula in aulas)
             //{
             //    Console.WriteLine(aula);

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace A22Listas
+namespace A21Listas
 {
     class Program
     {
@@ -74,6 +74,7 @@ namespace A22Listas
 
         private static void Imprimir(List<string> aulas)
         {
+            Console.Clear();
             //foreach (var aula in aulas)
             //{
             //    Console.WriteLine(aula);
