@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A11Arrays", "CSharpCollections\A11Arrays.csproj", "{1C776F06-7B70-4725-ABB8-578426D3418E}"
 EndProject
@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aula2", "Aula2", "{5B650B44
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A21Listas", "A12Listas\A21Listas.csproj", "{10FE083B-FFF5-40A5-B014-30907192A4B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A22ListasDeObjetos", "A22ListasDeObjetos\A22ListasDeObjetos.csproj", "{3C921AFF-5687-4D58-A9B4-13528C0A55C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A23ListasDeObjetos", "A22ListasDeObjetos\A23ListasDeObjetos.csproj", "{3C921AFF-5687-4D58-A9B4-13528C0A55C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

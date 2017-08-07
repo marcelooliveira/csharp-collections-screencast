@@ -4,47 +4,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace A22ListasDeObjetos
+namespace A23ListasDeObjetos
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //string aulaIntro = "Introdução às Coleções";
-            //string aulaModelando = "Modelando a Classe Aula";
-            //string aulaSets = "Trabalhando com Conjuntos";
-            ///<image url='$(ProjectDir)\Slides\image01.png'/>
-            var aulaIntro = new Aula("Introdução às Coleções", 15);
-            var aulaModelando = new Aula("Modelando a Classe Aula", 16);
-            var aulaSets = new Aula("Trabalhando com Conjuntos", 17);
-            ///<image url='$(ProjectDir)\Slides\image02.png'/>
-            //List<Aula> aulas = new List<Aula>();
-            //aulas.Add(aulaIntro);
-            //aulas.Add(aulaModelando);
-            //aulas.Add(aulaSets);
-            ///<image url='$(ProjectDir)\Slides\image03.png'/>
-            List<Aula> aulas = new List<Aula>
-            {
-                aulaIntro, aulaModelando, aulaSets
-            };
+            var aulaIntro = new Aula("Introdução às Coleções", 20);
+            var aulaModelando = new Aula("Modelando a Classe Aula", 18);
+            var aulaSets = new Aula("Trabalhando com Conjuntos", 16);
 
-            ///<image url='$(ProjectDir)\Slides\image04.png'/>
+            List<Aula> aulas = new List<Aula>();
+            aulas.Add(aulaIntro);
+            aulas.Add(aulaModelando);
+            aulas.Add(aulaSets);
             //aulas.Add("Conclusão");
 
-            ///<image url='$(ProjectDir)\Slides\image05.png'/>
             Imprimir(aulas);
-            ///<image url='$(ProjectDir)\Slides\image06.png'/>
 
-            ///<image url='$(ProjectDir)\Slides\image07.png'/>
             aulas.Sort();
-///<image url='$(ProjectDir)\Slides\image08.png'/>
-            
-///<image url='$(ProjectDir)\Slides\image09.png'/>
             Imprimir(aulas);
 
-            ///<image url='$(ProjectDir)\Slides\image10.png'/>
             aulas.Sort((este, outro) => este.Tempo.CompareTo(outro.Tempo));
-            ///<image url='$(ProjectDir)\Slides\image11.png'/>
             Imprimir(aulas);
         }
 
@@ -58,7 +39,7 @@ namespace A22ListasDeObjetos
         }
     }
 
-    internal class Aula : IComparable
+    class Aula : IComparable
     {
         private string titulo;
         private int tempo;
@@ -74,30 +55,14 @@ namespace A22ListasDeObjetos
 
         public int CompareTo(object obj)
         {
-            var other = obj as Aula;
-            return this.titulo.CompareTo(other.titulo);
+            Aula that = obj as Aula;
+            return this.titulo.CompareTo(that.titulo);
         }
 
         public override string ToString()
         {
-            return $"[titulo: {titulo} - duração: {tempo} minutos]";
+            return $"[título: {titulo}, tempo: {tempo} minutos]";
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
