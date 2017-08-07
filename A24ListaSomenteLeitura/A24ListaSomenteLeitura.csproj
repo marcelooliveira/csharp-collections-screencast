@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3C921AFF-5687-4D58-A9B4-13528C0A55C3}</ProjectGuid>
+    <ProjectGuid>{E2AC43D0-4099-46D1-98B3-C3EE2A82CFD3}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>A23ListasDeObjetos</RootNamespace>
-    <AssemblyName>A23ListasDeObjetos</AssemblyName>
+    <RootNamespace>A24ListaSomenteLeitura</RootNamespace>
+    <AssemblyName>A24ListaSomenteLeitura</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,16 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aula.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>
-    </PostBuildEvent>
-  </PropertyGroup>
 </Project>
