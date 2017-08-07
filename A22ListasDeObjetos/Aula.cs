@@ -6,34 +6,34 @@ using System.Threading.Tasks;
 
 namespace A22ListasDeObjetos
 {
-    ////class Aula
-    ////{
-    ////    private string titulo;
-    ////    private int tempo;
+    //class Aula
+    //{
+    //    private string titulo;
+    //    private int tempo;
 
-    ////    public string Titulo
-    ////    {
-    ////        get { return titulo; }
-    ////        set { titulo = value; }
-    ////    }
+    //    public string Titulo
+    //    {
+    //        get { return titulo; }
+    //        set { titulo = value; }
+    //    }
 
-    ////    public int Tempo
-    ////    {
-    ////        get { return tempo; }
-    ////        set { tempo = value; }
-    ////    }
+    //    public int Tempo
+    //    {
+    //        get { return tempo; }
+    //        set { tempo = value; }
+    //    }
 
-    ////    public Aula(string titulo, int tempo)
-    ////    {
-    ////        this.titulo = titulo;
-    ////        this.tempo = tempo;
-    ////    }
+    //    public Aula(string titulo, int tempo)
+    //    {
+    //        this.titulo = titulo;
+    //        this.tempo = tempo;
+    //    }
 
-    ////    public override string ToString()
-    ////    {
-    ////        return $"[Aula: {this.titulo}, {this.tempo} minutos]";
-    ////    }
-    ////}
+    //    public override string ToString()
+    //    {
+    //        return $"[Aula: {this.titulo}, {this.tempo} minutos]";
+    //    }
+    //}
 
     //class Aula : IComparable
     //{
