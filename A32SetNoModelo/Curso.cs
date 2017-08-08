@@ -9,14 +9,7 @@ namespace A32SetNoModelo
 {
     class Curso
     {
-        ISet<Aluno> alunos = new HashSet<Aluno>();
-        public IList<Aluno> Alunos
-        {
-            get
-            {
-                return new ReadOnlyCollection<Aluno>(alunos.ToList());
-            }
-        }
+        ///alunos deve ser um ISet. Alunos deve retornar ReadOnlyCollection
 
         private IList<Aula> aulas;
 
