@@ -39,11 +39,6 @@ namespace A32SetNoModelo
             set { nome = value; }
         }
 
-        internal void Matricula(Aluno aluno)
-        {
-            this.alunos.Add(aluno);
-        }
-
         public string Instrutor
         {
             get { return instrutor; }
