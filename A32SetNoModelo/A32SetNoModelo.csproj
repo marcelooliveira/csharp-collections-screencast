@@ -42,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Aluno.cs" />
     <Compile Include="Aula.cs" />
     <Compile Include="Curso.cs" />
     <Compile Include="Program.cs" />
