@@ -41,7 +41,7 @@ namespace A31OPoderDosSets
             alunos.Add("Marcelo Oliveira");
             //imprimindo de novo
             Console.WriteLine(string.Join(",", alunos));
-            //adicionando gushiken de novo
+            //adicionando gushiken de novo - não gera erro de duplicidade!
             alunos.Add("Fabio Gushiken");
             Console.WriteLine(string.Join(",", alunos));
 
@@ -49,15 +49,13 @@ namespace A31OPoderDosSets
 
             //desempenho HashSet x List: escalabilidade X memória
 
-            ///mudar iset para icollection p/deixar mais flexível!
-
             //ordenando: sort
             //alunos.Sort();
-            ///copiando: alunosEmLista
+            //copiando: alunosEmLista
             List<string> alunosEmLista = new List<string>(alunos);
-            ///ordenando copia
+            //ordenando copia
             alunosEmLista.Sort();
-            ///imprimindo copia
+            //imprimindo copia
             Console.WriteLine(string.Join(",", alunosEmLista));
         }
     }
