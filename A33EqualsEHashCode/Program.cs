@@ -30,26 +30,36 @@ namespace A33EqualsEHashCode
             });
 
             ///Imprimir: "O aluno a3 está matriculado?"
-
+            
             ///Criar um método EstaMatriculado
-
+            
             ///Vamos instanciar uma aluna (Vanessa Tonini)
-
+            
             ///e verificar se Tonini está matriculada
-
+            
             ///Mas a1 == a Tonini?
-
+            
             ///O que ocorreu? a1 é equals a Tonini?
-
+            
             ///São diferentes! Precisamos então implementar Equals()
 
             ///Agora fazemos a1 Equals tonini
-                        
+
+
             ///importante: rapidez da busca depende do CÓDIGO DE DISPERSÃO!
-            
+
             ///obtendo o código de dispersão
 
+
             ///comparando código de dispersão de a1 e tonini
+
+
+            ///IMPORTANTE!!
+            ///Dois objetos que são iguais possuem o mesmo hash code.
+            ///PORÉM, o contrário não é verdadeiro: 
+            ///Dois objetos com mesmo hash codes não são necessariamente iguais! 
+
+            
         }
     }
 }

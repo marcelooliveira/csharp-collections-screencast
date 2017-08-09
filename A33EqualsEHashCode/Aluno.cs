@@ -31,15 +31,5 @@ namespace A33EqualsEHashCode
             return "[Aluno: " + this.nome + ", matricula: " + this.numeroMatricula + "]";
         }
 
-        public override bool Equals(object obj)
-        {
-            Aluno that = obj as Aluno;
-            return this.nome.Equals(that.nome);
-        }
-
-        public override int GetHashCode()
-        {
-            return this.nome.GetHashCode();
-        }
     }
 }
