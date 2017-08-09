@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,7 +9,15 @@ namespace A32SetNoModelo
 {
     class Curso
     {
-        ///alunos deve ser um ISet. Alunos deve retornar ReadOnlyCollection
+        //alunos deve ser um ISet. Alunos deve retornar ReadOnlyCollection
+        private ISet<Aluno> alunos = new HashSet<Aluno>();
+        public IList<Aluno> Alunos
+        {
+            get
+            {
+                return new ReadOnlyCollection<Aluno>(alunos.ToList());
+            }
+        }
 
         private IList<Aula> aulas;
 
@@ -60,6 +69,11 @@ namespace A32SetNoModelo
 
                 return aulas.Sum(aula => aula.Tempo);
             }
+        }
+
+        internal void Matricula(Aluno aluno)
+        {
+            alunos.Add(aluno);
         }
 
         public override string ToString()
