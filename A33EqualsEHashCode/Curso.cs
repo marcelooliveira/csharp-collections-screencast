@@ -79,5 +79,10 @@ namespace A33EqualsEHashCode
         {
             return $"Curso: {nome}, Tempo: {TempoTotal}, Aulas: {string.Join(",", aulas)}";
         }
+
+        public bool EstaMatriculado(Aluno aluno)
+        {
+            return alunos.Contains(aluno);
+        }
     }
 }

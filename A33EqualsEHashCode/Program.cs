@@ -42,37 +42,23 @@ namespace A33EqualsEHashCode
             }
             //no formato "[Nome: , Matrícula: ]"
 
-            ///Imprimir: "O aluno a3 está matriculado?"
-
-            ///Criar um método EstaMatriculado
-
-            ///Vamos instanciar uma aluna (Vanessa Tonini)
-
-            ///e verificar se Tonini está matriculada
-
-            ///Mas a1 == a Tonini?
-
-            ///O que ocorreu? a1 é equals a Tonini?
-
-            ///São diferentes! Precisamos então implementar Equals()
+            //Imprimir: "O aluno a1 está matriculado?"
+            Console.WriteLine($"O aluno a1 {a1.Nome} está matriculado?");
+            //Criar um método EstaMatriculado
+            Console.WriteLine(csharpColecoes.EstaMatriculado(a1));
+            //Vamos instanciar uma aluna (Vanessa Tonini)
+            Aluno tonini = new Aluno("Vanessa Tonini", 34672);
+            //e verificar se Tonini está matriculada
+            Console.WriteLine("Tonini está matriculada? " + csharpColecoes.EstaMatriculado(tonini));
+            //Mas a1 == a Tonini?
+            Console.WriteLine("a1 == a Tonini?");
+            Console.WriteLine(a1 == tonini);
+            //O que ocorreu? a1 é equals a Tonini?
+            Console.WriteLine("a1 é equals a Tonini?");
+            Console.WriteLine(a1.Equals(tonini));
+            //São diferentes! Precisamos então implementar Equals()
 
             ///Agora fazemos a1 Equals tonini
-
-
-            ///importante: rapidez da busca depende do CÓDIGO DE DISPERSÃO!
-
-            ///obtendo o código de dispersão
-
-
-            ///comparando código de dispersão de a1 e tonini
-
-
-            ///IMPORTANTE!!
-            ///Dois objetos que são iguais possuem o mesmo hash code.
-            ///PORÉM, o contrário não é verdadeiro: 
-            ///Dois objetos com mesmo hash codes não são necessariamente iguais! 
-
-
         }
     }
 }
