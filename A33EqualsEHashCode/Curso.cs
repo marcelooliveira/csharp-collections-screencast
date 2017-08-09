@@ -75,11 +75,6 @@ namespace A33EqualsEHashCode
             }
         }
 
-        internal bool EstaMatriculado(Aluno aluno)
-        {
-            return this.alunos.Contains(aluno);
-        }
-
         public override string ToString()
         {
             return $"Curso: {nome}, Tempo: {TempoTotal}, Aulas: {string.Join(",", aulas)}";

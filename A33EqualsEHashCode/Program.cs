@@ -29,24 +29,27 @@ namespace A33EqualsEHashCode
                 Console.WriteLine(aluno);
             });
 
-            Console.WriteLine("O aluno " + a3.Nome + " está matriculado?");
-            Console.WriteLine(csharpColecoes.EstaMatriculado(a3));
+            ///Imprimir: "O aluno a3 está matriculado?"
 
-            Aluno tonini = new Aluno("Vanessa Tonini", 34672);
-            Console.WriteLine("E essa Tonini, está matriculada?");
-            Console.WriteLine(csharpColecoes.EstaMatriculado(tonini));
+            ///Criar um método EstaMatriculado
 
-            Console.WriteLine("O a1 é == à Tonini?");
-            Console.WriteLine(a1 == tonini);
+            ///Vamos instanciar uma aluna (Vanessa Tonini)
 
-            //Console.WriteLine("O a1 é equals à Tonini?");
-            //antes do Aluno.Equals(): false
-            //Console.WriteLine(a1.Equals(tonini));
-            //depois do Aluno.Equals(): true
-            Console.WriteLine(a1.Equals(tonini));
+            ///e verificar se Tonini está matriculada
 
-            Console.WriteLine(a1.GetHashCode()); /*643022057*/
-            Console.WriteLine(a1.GetHashCode() == tonini.GetHashCode()); /*643022057*/
+            ///Mas a1 == a Tonini?
+
+            ///O que ocorreu? a1 é equals a Tonini?
+
+            ///São diferentes! Precisamos então implementar Equals()
+
+            ///Agora fazemos a1 Equals tonini
+                        
+            ///importante: rapidez da busca depende do CÓDIGO DE DISPERSÃO!
+            
+            ///obtendo o código de dispersão
+
+            ///comparando código de dispersão de a1 e tonini
         }
     }
 }
