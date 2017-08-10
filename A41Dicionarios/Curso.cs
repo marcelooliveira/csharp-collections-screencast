@@ -9,6 +9,8 @@ namespace A41Dicionarios
 {
     class Curso
     {
+        ///implementando um dicionário de alunos
+
         ISet<Aluno> alunos = new HashSet<Aluno>();
         public IList<Aluno> Alunos
         {
@@ -49,6 +51,7 @@ namespace A41Dicionarios
         internal void Matricula(Aluno aluno)
         {
             this.alunos.Add(aluno);
+            this.matriculaParaAluno.Add(aluno.NumeroMatricula, aluno);
         }
 
         public string Instrutor

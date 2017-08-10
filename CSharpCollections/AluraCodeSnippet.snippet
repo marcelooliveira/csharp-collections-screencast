@@ -9,8 +9,14 @@
             <Shortcut>img</Shortcut>         
         </Header>
         <Snippet>
+            <Declarations>
+                <Literal>
+                    <ID>number</ID>
+                    <Default>"numero"</Default>
+                </Literal>
+            </Declarations>          
             <Code Language="CSharp">
-                <![CDATA[///<image url="$$(ProjectDir)\Slides\image.png" scale=""/>]]> 
+                <![CDATA[///<image url="$$(ProjectDir)\Slides\image$number$.png" scale=""/>]]> 
             </Code>  
         </Snippet>  
     </CodeSnippet>  
