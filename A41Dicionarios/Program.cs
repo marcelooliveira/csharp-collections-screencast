@@ -86,7 +86,9 @@ namespace A41Dicionarios
             //pergunta: "Quem é o Aluno 5617 agora?"
             Console.WriteLine("Quem é o Aluno 5617 agora?");
             Console.WriteLine(csharpColecoes.BuscaMatriculado(5617));
-            ///Como um dicionário armazena os valores (diagrama)
+
+            //Como um dicionário armazena os valores (diagrama)
+            ///<image url="$(ProjectDir)\Slides\image2.png" scale=""/>
         }
     }
 }
