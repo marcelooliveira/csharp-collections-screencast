@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+VisualStudioVersion = 15.0.26430.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A11Arrays", "CSharpCollections\A11Arrays.csproj", "{1C776F06-7B70-4725-ABB8-578426D3418E}"
 EndProject
@@ -24,6 +24,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A32SetNoModelo", "A32SetNoModelo\A32SetNoModelo.csproj", "{8B347CDB-EF84-492B-9A1C-8F830B1EF756}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A33EqualsEHashCode", "A33EqualsEHashCode\A33EqualsEHashCode.csproj", "{AD9E49A0-7CE0-44A2-9082-1350D6329EA4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aula4", "Aula4", "{7B1ED5F0-8FEF-4330-8244-AF1786DE5F28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A41Dicionarios", "A41Dicionarios\A41Dicionarios.csproj", "{4F23FE24-7C18-4839-AA17-E3E7BF141F19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,10 @@ Global
 		{AD9E49A0-7CE0-44A2-9082-1350D6329EA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD9E49A0-7CE0-44A2-9082-1350D6329EA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD9E49A0-7CE0-44A2-9082-1350D6329EA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F23FE24-7C18-4839-AA17-E3E7BF141F19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F23FE24-7C18-4839-AA17-E3E7BF141F19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F23FE24-7C18-4839-AA17-E3E7BF141F19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F23FE24-7C18-4839-AA17-E3E7BF141F19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,5 +84,6 @@ Global
 		{4FD9A3FA-D424-4252-BE32-ED9B3A359724} = {F64FBA88-6226-444B-9940-EBD081524630}
 		{8B347CDB-EF84-492B-9A1C-8F830B1EF756} = {F64FBA88-6226-444B-9940-EBD081524630}
 		{AD9E49A0-7CE0-44A2-9082-1350D6329EA4} = {F64FBA88-6226-444B-9940-EBD081524630}
+		{4F23FE24-7C18-4839-AA17-E3E7BF141F19} = {7B1ED5F0-8FEF-4330-8244-AF1786DE5F28}
 	EndGlobalSection
 EndGlobal

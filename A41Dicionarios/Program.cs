@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace A33EqualsEHashCode
+namespace A41Dicionarios
 {
     class Program
     {
@@ -56,7 +56,8 @@ namespace A33EqualsEHashCode
             //O que ocorreu? a1 é equals a Tonini?
             Console.WriteLine("a1 é equals a Tonini?");
             Console.WriteLine(a1.Equals(tonini));
-            //São diferentes! Precisamos então implementar Equals()
+            
+
         }
     }
 }
