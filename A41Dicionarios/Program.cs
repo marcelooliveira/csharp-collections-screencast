@@ -70,10 +70,8 @@ namespace A41Dicionarios
 
             ///Funciona! Mas essa busca é eficiente?
             ///Introduzindo uma nova coleção: dicionário
-
             ///Um dicionário permite associar uma chave (no caso, matrícula)
             ///a um valor (o aluno)
-
             ///Vamos implementar um dicionário de alunos em Curso
 
             ///Quem é o aluno 5618?
