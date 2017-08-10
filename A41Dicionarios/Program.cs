@@ -78,12 +78,14 @@ namespace A41Dicionarios
             Console.WriteLine("Quem é o aluno 5618?");
             Console.WriteLine(csharpColecoes.BuscaMatriculado(5618));
 
-            ///e se tentarmos adicionar outro aluno com mesma chave 5617?
-
-            ///e se quisermos trocar o aluno que tem a mesma chave?
-
-            ///pergunta: "Quem é o Aluno 5617 agora?"
-
+            //e se tentarmos adicionar outro aluno com mesma chave 5617?
+            Aluno fabio = new Aluno("Fabio Gushiken", 5617);
+            //csharpColecoes.Matricula(fabio);
+            //e se quisermos trocar o aluno que tem a mesma chave?
+            csharpColecoes.SubstituiAluno(fabio);
+            //pergunta: "Quem é o Aluno 5617 agora?"
+            Console.WriteLine("Quem é o Aluno 5617 agora?");
+            Console.WriteLine(csharpColecoes.BuscaMatriculado(5617));
             ///Como um dicionário armazena os valores (diagrama)
         }
     }

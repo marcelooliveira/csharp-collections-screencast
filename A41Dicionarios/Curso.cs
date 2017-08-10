@@ -96,5 +96,10 @@ namespace A41Dicionarios
             this.dicionarioAlunos.TryGetValue(numeroMatricula, out aluno);
             return aluno;
         }
+
+        internal void SubstituiAluno(Aluno aluno)
+        {
+            this.dicionarioAlunos[aluno.NumeroMatricula] = aluno;
+        }
     }
 }
