@@ -57,24 +57,26 @@ namespace A41Dicionarios
             Console.WriteLine("a1 é equals a Tonini?");
             Console.WriteLine(a1.Equals(tonini));
 
-            ///limpando o console
+            //limpando o console
+            Console.Clear();
+            //já temos método para saber se o aluno está matriculado.
+            //Mas agora precisamos buscar aluno por número de matrícula
 
-            ///já temos método para saber se o aluno está matriculado.
-            ///Mas agora precisamos buscar aluno por número de matrícula
+            //pergunta: "Quem é o aluno com matrícula 5617?"
+            Console.WriteLine("Quem é o aluno com matrícula 5617?");
+            //implementando Curso.BuscaMatriculado
+            Aluno aluno5617 = csharpColecoes.BuscaMatriculado(5617);
+            //imprimindo o aluno5617 encontrado
+            Console.WriteLine("aluno5617: " + aluno5617);
+            //Funciona! Mas essa busca é eficiente?
+            //Introduzindo uma nova coleção: dicionário
+            //Um dicionário permite associar uma chave (no caso, matrícula)
+            //a um valor (o aluno)
+            //Vamos implementar um dicionário de alunos em Curso
 
-            ///pergunta: "Quem é o aluno com matrícula 5617?"
-
-            ///implementando Curso.BuscaMatriculado
-
-            ///imprimindo o aluno5617 encontrado
-
-            ///Funciona! Mas essa busca é eficiente?
-            ///Introduzindo uma nova coleção: dicionário
-            ///Um dicionário permite associar uma chave (no caso, matrícula)
-            ///a um valor (o aluno)
-            ///Vamos implementar um dicionário de alunos em Curso
-
-            ///Quem é o aluno 5618?
+            //Quem é o aluno 5618?
+            Console.WriteLine("Quem é o aluno 5618?");
+            Console.WriteLine(csharpColecoes.BuscaMatriculado(5618));
 
             ///e se tentarmos adicionar outro aluno com mesma chave 5617?
 

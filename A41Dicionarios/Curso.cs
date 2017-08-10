@@ -9,7 +9,9 @@ namespace A41Dicionarios
 {
     class Curso
     {
-        ///implementando um dicionário de alunos
+        //implementando um dicionário de alunos
+        private IDictionary<int, Aluno> dicionarioAlunos =
+            new Dictionary<int, Aluno>();
 
         ISet<Aluno> alunos = new HashSet<Aluno>();
         public IList<Aluno> Alunos
@@ -51,6 +53,7 @@ namespace A41Dicionarios
         internal void Matricula(Aluno aluno)
         {
             this.alunos.Add(aluno);
+            this.dicionarioAlunos.Add(aluno.NumeroMatricula, aluno);
         }
 
         public string Instrutor
@@ -85,6 +88,13 @@ namespace A41Dicionarios
         public bool EstaMatriculado(Aluno aluno)
         {
             return alunos.Contains(aluno);
+        }
+
+        internal Aluno BuscaMatriculado(int numeroMatricula)
+        {
+            Aluno aluno = null;
+            this.dicionarioAlunos.TryGetValue(numeroMatricula, out aluno);
+            return aluno;
         }
     }
 }
