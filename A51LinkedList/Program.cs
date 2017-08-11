@@ -90,9 +90,8 @@ namespace A51LinkedList
             //image4
             ///<image url="$(ProjectDir)\Slides\image4.png" scale=""/>
             //Agora d2 e d4 estão ligados!
-            //d2.Next é igual a d4
-            //d4.Previous é igual a d2
-
+            //- d2.Next é igual a d4
+            //- d4.Previous é igual a d2
             //Continuando com nossa lista ligada, 
             //vamos adicionar terça depois de segunda
             var d3 = dias.AddAfter(d2, "terça");
@@ -100,8 +99,7 @@ namespace A51LinkedList
             ///<image url="$(ProjectDir)\Slides\image5.png" scale=""/>
             //Perceba que os "ponteiros", ou referências
             //de d2 e d4 foram redirecionados para d3!!
-
-            //vamos adicionar sexta depois de quarta
+            //Vamos adicionar sexta depois de quarta
             var d6 = dias.AddAfter(d4, "sexta");
             //image6
             ///<image url="$(ProjectDir)\Slides\image6.png" scale=""/>
@@ -123,13 +121,13 @@ namespace A51LinkedList
                 Console.WriteLine(d);
             }
 
+            //Para removermos um elemento, podemos tanto
+            //remover pelo valor quanto pela 
+            //referência do LinkedListNode
+            //dias.Remove("quarta") ou dias.Remove(d4);
+
             //LinkedList NÃO DÁ suporte ao acesso de índice: dias[0]
             //por isso podemos far um laço foreach mas não um for!
-
-            //Para removermos um elemento, temos que conhecer a
-            //referência do LinkedListNode!
-            dias.Remove(d4);
-
             foreach (var d in dias)
             {
                 Console.WriteLine(d);
