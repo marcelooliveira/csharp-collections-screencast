@@ -16,27 +16,29 @@ namespace A51LinkedList
                 "abacate", "banana", "caqui", "damasco", "figo"
             };
 
-            Console.Clear();
+            //Vamos imprimir essa lista
             foreach (var f in frutas)
             {
                 Console.WriteLine(f);
             }
+            //image1
             ///<image url="$(ProjectDir)\Slides\image1.png" scale=""/>
-            //Adicionar um elemento ao final de uma lista é fácil
+            //Adicionar um elemento ao final de uma lista é rápido
+            frutas.Add("goiaba");
 
             //Porém inserir no meio da lista exige mais esforço computacional
-            
             frutas.Insert(2, "caju");
             Console.Clear();
             foreach (var f in frutas)
             {
                 Console.WriteLine(f);
             }
+            
+            //image2
             ///<image url="$(ProjectDir)\Slides\image2.png" scale=""/>
             //porque os elementos têm que ser deslocados para darem
             //espaço ao novo elemento!
-
-            //e se tivermos que remover esse elemento, os elementos
+            //E se tivermos que remover esse elemento, os elementos
             //seguintes precisam ser deslocados de novo!
 
             Console.WriteLine();
@@ -48,15 +50,17 @@ namespace A51LinkedList
 
             //Quanto maior a lista, mais ineficiente é a inserção
             //e remoção de elementos no meio dela!
-
-            //Que coleção é mais apropriada para inserção/remoção rápida?
+            //Que coleção é apropriada para inserção/remoção rápida?
             //Apresentando LISTA LIGADA (LINKED LIST):
             //- Elementos não precisam estar em sequência em memória
             //- Cada elemento sabe quem é o anterior e o próximo
             //- Cada elemento é um "nó" que contém um valor
+
+            //linked
             ///<image url="$(ProjectDir)\Slides\linked.png" scale=""/>
 
             //Como a ordem é mantida? Usando ponteiros
+            //linked2
             ///<image url="$(ProjectDir)\Slides\linked2.png" scale=""/>
             //Instanciando uma nova lista ligada: dias da semana
             LinkedList<string> dias = new LinkedList<string>();
@@ -65,6 +69,7 @@ namespace A51LinkedList
             var d4 = dias.AddFirst("quarta");
 
             //"quarta" é o primeiro elemento da lista ligada
+            //image3
             ///<image url="$(ProjectDir)\Slides\image3.png" scale=""/>
             //cada elemento é um nó: LinkedListNode<T>
             //System.Collections.Generic.LinkedListNode`1[System.String]
@@ -82,6 +87,7 @@ namespace A51LinkedList
 
             //Vamos adicionar segunda, antes de quarta:
             var d2 = dias.AddBefore(d4, "segunda");
+            //image4
             ///<image url="$(ProjectDir)\Slides\image4.png" scale=""/>
             //Agora d2 e d4 estão ligados!
             //d2.Next é igual a d4
@@ -90,21 +96,26 @@ namespace A51LinkedList
             //Continuando com nossa lista ligada, 
             //vamos adicionar terça depois de segunda
             var d3 = dias.AddAfter(d2, "terça");
+            //image5
             ///<image url="$(ProjectDir)\Slides\image5.png" scale=""/>
             //Perceba que os "ponteiros", ou referências
             //de d2 e d4 foram redirecionados para d3!!
-            
+
             //vamos adicionar sexta depois de quarta
             var d6 = dias.AddAfter(d4, "sexta");
+            //image6
             ///<image url="$(ProjectDir)\Slides\image6.png" scale=""/>
             //sábado depois de sexta
             var d7 = dias.AddAfter(d6, "sábado");
+            //image7
             ///<image url="$(ProjectDir)\Slides\image7.png" scale=""/>
             //quinta antes de sexta
             var d5 = dias.AddBefore(d6, "quinta");
+            //image8
             ///<image url="$(ProjectDir)\Slides\image8.png" scale=""/>
             //domingo antes de segunda
             var d1 = dias.AddBefore(d2, "domingo");
+            //image9
             ///<image url="$(ProjectDir)\Slides\image9.png" scale=""/>
             //Agora vamos imprimir a lista ligada
             foreach (var d in dias)
