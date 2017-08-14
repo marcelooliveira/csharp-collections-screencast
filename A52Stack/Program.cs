@@ -11,6 +11,7 @@ namespace A52Stack
         static void Main(string[] args)
         {
             var navegador = new Navegador();
+
             navegador.NavegarPara("google.com");
             navegador.NavegarPara("caelum.com.br");
             navegador.NavegarPara("alura.com.br");
@@ -26,13 +27,14 @@ namespace A52Stack
 
     internal class Navegador
     {
-        private string atual = "vazia";
         private readonly Stack<string> historicoAnterior = new Stack<string>();
         private readonly Stack<string> historicoProximo = new Stack<string>();
 
+        private string atual = "vazia";
+
         public Navegador()
         {
-            Console.WriteLine(atual);
+            Console.WriteLine("Página atual: " + atual);
         }
 
         internal void Anterior()
@@ -41,7 +43,7 @@ namespace A52Stack
             {
                 historicoProximo.Push(atual);
                 atual = historicoAnterior.Pop();
-                Console.WriteLine(atual);
+                Console.WriteLine("Página atual: " + atual);
             }
         }
 
@@ -49,7 +51,7 @@ namespace A52Stack
         {
             historicoAnterior.Push(atual);
             atual = url;
-            Console.WriteLine(atual);
+            Console.WriteLine("Página atual: " + atual);
         }
 
         internal void Proximo()
@@ -58,7 +60,7 @@ namespace A52Stack
             {
                 historicoAnterior.Push(atual);
                 atual = historicoProximo.Pop();
-                Console.WriteLine(atual);
+                Console.WriteLine("Página atual: " + atual);
             }
         }
     }
